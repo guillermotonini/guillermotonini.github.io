@@ -1,0 +1,28 @@
+---
+title: "Escuelas de pesca y lanzamiendo"
+editor: visual
+---
+
+# Fly Casting Argentina
+
+::: {#videoFCA1}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gntENGV1t5o?si=WjhIGRWzMZDxoa26" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+:::
+
+::: {#videoFCA2}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AQKY_MI02CI?si=0-Mhr9m6MJ-Ujn9M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+:::
+
+::: {#videoFCA3}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZOUZ9tU9BsE?si=k91b2XvItbtRbFGo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+:::
+
+# Si Pesco Mejor
+
+Si Pesco...Mejor! es primera escuela de pesca deportiva en utilizar este deporte como una terapia para la rehabilitación de jóvenes adictos a las sustancias. Comenzó como un blog donde compartía opiniones, tutoriales y salidas de pesca. Luego se paso del blog al videoblog creándose el canal de youtube que lleva el mismo nombre que la escuela. Hoy en día es una fuente diaria de información, tutoriales y salidas de pesca, y cuenta con más de 13 millones de visualizaciones.
+
+::: {#videoSPM}
+<iframe width="560" height="315" align="center" src="https://www.youtube.com/embed/reU3tqz55K8?si=MAaHepwTnwTDFmG2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+
+</iframe>
+:::

@@ -1,0 +1,24 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Guillermo Tonini"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Inicio
+      - href: escuelas.qmd
+        text: Escuelas
+      - href: temario.qmd
+        text: Cursos
+      - href: galeria.qmd
+        text: Galeria
+format:
+  html:
+    theme: lumen
+    css: styles.css
+    toc: true
+
+
+

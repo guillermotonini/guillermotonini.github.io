@@ -1,0 +1,45 @@
+---
+title: "Guillermo Tonini"
+image: recursos/perfil.jpg
+about: 
+  template: solana
+  links: 
+    - icon: whatsapp
+      text: "1540285234"
+      href: https://wa.link/6nbo8m
+    - icon: envelope-at
+      text: todoporlapesca@gmail.com
+      href: mailto:todoporlapesca@gmail.com
+    - icon: youtube
+      text: Canal Fly Casting
+      href: https://youtube.com/@flycastingargentina?si=blNozXTPIG-NmTs2
+    - icon: youtube
+      text: Canal Si Pesco Mejor
+      href: https://youtube.com/@GuillermoToniniSiPescoMejor?si=5Uk6lR5VPLe3Vmrw 
+    - icon: instagram
+      text: Si Pesco Mejor
+      href: https://ig.me/m/sipescomejor
+    - icon: instagram
+      text: Fly Casting Argentina
+      href: https://ig.me/m/flycastingargentina
+---
+
+Mi nombre es Guillermo Tonini. Desde que tengo memoria me dedico a todo lo que se relacione con la pesca. Otra de mis pasiones es enseñar, así que luego de varios años de compartir mi experiencia puedo decir también puedo pescar a través de los otros. Por eso, fundé las escuelas de pesca 'Si Pesco mejor' y mecánica de lanzamiento 'Fly Casting Argentina'. Actualmente soy instructor certificado de la Asociación Argentina de Pesca con Mosca (AAPC) y continuo mi formación en la Escuela Mendocina de Pesca con Mosca (EMPM) y en la Academia Aguas Arriba.
+
+![](recursos/logos.png)
+
+## Formación
+
+**Asociación Argentina de Pesca con Mosca** \| *Argentina*
+
+-   *Instructor Certificado*
+
+**Escuela Mendocina de Pesca con Mosca** \| *Mendoza, Argentina*
+
+**Academia Aguas Arriba** \| *Mendoza, Argentina*
+
+## Experiencia
+
+Escuela de pesca **Si Pesco Mejor** \| *Fundador*
+
+Escuela de Mecánica de Lanzamiento **Fly Casting Argentina** \| *Fundador*
