@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.340">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Guillermo Tonini - Mecánica de Lanzamiento</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Guillermo Tonini</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html" rel="" target="">
+ <span class="menu-text">Inicio</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./escuelas.html" rel="" target="">
+ <span class="menu-text">Escuelas</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./temario.html" rel="" target="" aria-current="page">
+ <span class="menu-text">Cursos</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./galeria.html" rel="" target="">
+ <span class="menu-text">Galeria</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#temario" id="toc-temario" class="nav-link active" data-scroll-target="#temario">Temario</a>
+  <ul class="collapse">
+  <li><a href="#principios-del-lanzamiento" id="toc-principios-del-lanzamiento" class="nav-link" data-scroll-target="#principios-del-lanzamiento">Principios del lanzamiento</a>
+  <ul class="collapse">
+  <li><a href="#tensión-de-la-línea" id="toc-tensión-de-la-línea" class="nav-link" data-scroll-target="#tensión-de-la-línea">Tensión de la línea</a></li>
+  <li><a href="#aceleración-gradual-y-constante" id="toc-aceleración-gradual-y-constante" class="nav-link" data-scroll-target="#aceleración-gradual-y-constante">Aceleración gradual y constante</a></li>
+  <li><a href="#acto-de-lanzamiento-variable" id="toc-acto-de-lanzamiento-variable" class="nav-link" data-scroll-target="#acto-de-lanzamiento-variable">Acto de lanzamiento variable</a></li>
+  <li><a href="#timing-o-tempo-del-lanzado" id="toc-timing-o-tempo-del-lanzado" class="nav-link" data-scroll-target="#timing-o-tempo-del-lanzado">Timing o tempo del lanzado</a></li>
+  <li><a href="#la-parada-de-la-caña" id="toc-la-parada-de-la-caña" class="nav-link" data-scroll-target="#la-parada-de-la-caña">La parada de la caña</a></li>
+  <li><a href="#ejecicios-de-lanzamiento" id="toc-ejecicios-de-lanzamiento" class="nav-link" data-scroll-target="#ejecicios-de-lanzamiento">Ejecicios de lanzamiento</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Mecánica de Lanzamiento</h1>
+<p class="subtitle lead">Pesca con mosca</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p>Te doy la bienvenida a esta pasión que es la pesca con mosca. Además de conocer una modalidad maravillosa, también te va a permitir conocer un estilo de vida.</p>
+<ul>
+<li><p>Clases teórico-prácticas (2h duración)</p></li>
+<li><p>Días y horarios flexibles</p></li>
+<li><p>Lugar a convenir</p></li>
+<li><p>Sin experiencia previa</p></li>
+<li><p>No hace falta contar con equipos</p></li>
+<li><p>Recursos gráficos y audiovisuales</p></li>
+<li><p>Contenidos según nivel: Inicial - Medio - Avanzado</p></li>
+</ul>
+<section id="temario" class="level1">
+<h1>Temario</h1>
+<section id="principios-del-lanzamiento" class="level2">
+<h2 class="anchored" data-anchor-id="principios-del-lanzamiento">Principios del lanzamiento</h2>
+<p>Todo lanzamiento que uno vaya a efectuar independientemente cual sea, será efectivo si están presentes todo los principios que permitirán que se logre dicho <em>cast</em>. Un <em>cast</em> con la ausencia de uno de los principios, lo condenaría al fracaso, por no respetar y/o entender la física del lanzamiento. Un principio es una regla que debe seguirse con el fin de lograr cierto propósito específico y un conjunto de principios son las reglas a seguir para lograr un fin mayor. El objetivo es saber si están bien claros, definidos e incluidos los pasos del lanzamiento, corrigiendo en cada <em>cast</em> la mecánica de los movimientos. Un buen lanzamiento tiene como fin depositar la mosca en el agua con la mayor delicadeza y precisión posible y en la menor cantidad de movimientos.</p>
+<section id="tensión-de-la-línea" class="level3">
+<h3 class="anchored" data-anchor-id="tensión-de-la-línea">Tensión de la línea</h3>
+<p>Debe tener la línea tensa siempre antes de iniciar cualquier <em>cast</em> para poder cargar la caña apropiadamente, ya que al tener tensión en la línea la puntera cuando se empieza a mover, literalmente tira de la línea y la masa de esta detiene o retrasa la puntera obligándola a doblarse justo ahí en la punta de la caña. Siempre observe si al iniciar un <em>cast</em> está tirando de la línea con la puntera y si esta se retrasa y se dobla en cuanto empieza el movimiento y de no ser así es porque su línea no estaba tensa al momento de iniciarlo y habrá tirado simplemente de una línea floja y la caña no se doblara hasta que la línea no se tense. La falta de tensión además de obligar al <em>caster</em> a hacer movimientos más rápidos, lo que genera cansancio, <em>loops</em> muy abiertos u ondas indeseadas en la línea. Tensión de línea carga la caña eficientemente y le da control de la línea.</p>
+</section>
+<section id="aceleración-gradual-y-constante" class="level3">
+<h3 class="anchored" data-anchor-id="aceleración-gradual-y-constante">Aceleración gradual y constante</h3>
+<p>Todo cast debe tener una aceleración contante y creciente hasta la parada. La única manera de cargar la caña eficientemente es teniendo tensión de línea y moviendo la mano y brazo lanzador. La caña con velocidad creciente durante todo el golpe de lanzado, muy lento al comienzo, mas rápido en el medio del golpe y a la máxima velocidad requerida sobre el final del cast. Si tiene una aceleración constante, la velocidad irá aumentando a medida que evolucione el lanzado y es en el instante previo a la parada en donde tendrá la máxima velocidad en la puntera de la caña. Empiece como una tortuga y termine como una liebre su golpe de lance, eso le permitirá tener una aceleración apropiada. Aceleración gradual y constante: carga la caña eficientemente, evita hondas en la linea , nudos indeseados en el líder y logra una velocidad en aumento permanente sin esfuerzo.</p>
+</section>
+<section id="acto-de-lanzamiento-variable" class="level3">
+<h3 class="anchored" data-anchor-id="acto-de-lanzamiento-variable">Acto de lanzamiento variable</h3>
+<p>El arco de lanzamiento se varía por dos aspectos:</p>
+<ol type="1">
+<li><p>El tamaño del arco de lanzamiento con respecto a la cantidad de línea en vuelo.</p></li>
+<li><p>La ubicación del arco de Lanzamiento según distancia del cast, viento y el tipo representación que quiera hacerse.</p></li>
+</ol>
+<p>La definición que más se lee y escucha de <strong>Arco de Lanzamiento</strong> es la siguiente:</p>
+<blockquote class="blockquote">
+<p><em>Se trata de la distancia que recorre la puntera de la caña entre parada y parada, entendiéndose como el ángulo que describe el talón de la caña entre parada y parada.</em></p>
+</blockquote>
+<p>Este es el sello distintivo de todo buen lanzador independientemente del estilo que tenga, ya que todo buen lanzador ajusta el tamaño del arco según la situación de pesca requerida, porque es lo que determina si el loop será angosto o amplio o si tendrá un loop cruzado. Debemos saber que siempre la línea sigue la trayectoria de la puntera, por lo cual el loop es el resultado de dicha trayectoria. Para controlar diferentes trayectorias de la puntera de la caña durante el lanzamiento y, por ende, diferentes loops, debemos entender perfectamente este principio. Quien lo desconozca jamás tendrá el control de línea que desea.</p>
+<p>De esta manera, los Loop cerrados se producen siempre que la trayectoria de la puntera es rectilínea, mientras que los Loops abiertos se producen cuando la trayectoria de la puntera es convexa o parabólica ascendente. Por otro lado, los Loops cruzados o tailing loops se producen cuando la trayectoria de la puntera es cóncava o descendente.Tambien profundizaremos sobre los Cast corto arco corto, cast medio arco medio, cast largo arco largo.</p>
+<p>Veremos definiciones imporantes</p>
+<blockquote class="blockquote">
+<p><strong>Loops abiertos:</strong> deben generar una trayectoria PARABÓLICA O CONVEXA DE LA PUNTERA. Para lograr esto se debe aumentar el tamaño del arco de lanzamiento con respecto a la cantidad de línea volada. Lo que aprenderemos es que de esta manera la puntera no viajara en línea recta, sino que lo hará en forma semi circular hacia arriba.</p>
+</blockquote>
+<p>Los loops abiertos son ideales para pescar con ninfas grandes, lastre y grandes streamers como las moscas de Dorado, Tarariras o algunas de Salt Water.</p>
+<blockquote class="blockquote">
+<p><strong>Loops cruzados o tailling Loops</strong>: se producen porque el arco de lanzamiento es menor al que se necesita para ese cast en particular. Es decir, el arco fue corto en relación a la cantidad de línea volada o por una aceleración errática.</p>
+</blockquote>
+<p>En este caso, lo que sucede es que la puntera abandona la trayectoria rectilínea que debería tener (causa) y produce un trayectoria cóncava o curva hacia abajo obligando a que la línea haga lo mismo (efecto). Aqui el ramal superior o de la mosca cruza visiblemente el ramal inferior o de la caña y es ahí en donde se producen nudos en nuestra líder. Esto generaría algo que muchos pescadores lo padecen a diario, mal llamados nudos de viento. Este no interviene en el suceso. Este error se puede resolver fácilmente: si tiene problemas con los tailing loop, amplié el tamaño de su arco de lanzamiento y acelere suavemente y de manera constante durante todo el golpe de lance, vera que los loops cruzados desaparecen.</p>
+</section>
+<section id="timing-o-tempo-del-lanzado" class="level3">
+<h3 class="anchored" data-anchor-id="timing-o-tempo-del-lanzado">Timing o tempo del lanzado</h3>
+<p>Para tener un buen timing o tempo del lanzado, debe hacer la pausa necesaria, para que la línea se estire totalmente antes de empezar el lanzamiento en la dirección opuesta. La pausa justa en el casteo es vital para asegurarse siempre de estar trabajando con línea tensa. Si tiene problemas con su tempo, debe determinar si es porque no espera a que la línea se estire por completo o si es porque espera demasiado y la linea se cae en un back cast. En los dos casos el resultado es el mismo, perdida de tensión de línea, lo que no le permite cargar la caña apropiadamente y tener el control deseado sobre la línea.</p>
+<ul>
+<li><p>Tiros cortos, arcos cortos y pausas cortas.</p></li>
+<li><p>Tiros medios, arcos medios y pausas medias.</p></li>
+<li><p>Tiros largos, arcos largos y pausas largas.</p></li>
+</ul>
+</section>
+<section id="la-parada-de-la-caña" class="level3">
+<h3 class="anchored" data-anchor-id="la-parada-de-la-caña">La parada de la caña</h3>
+<p>Cuando para la caña, la curva o retraso que esta tenia se pierde y esta se endereza y se curva nuevamente en la dirección opuesta, hacia el objetivo y finalmente recupera su posición de reposo. Esta segunda curva o contra flexión, hacia el objetivo se llama Faz de rebote y en la dirección que esta se descargue, se proyectara la línea, siempre y cuando la línea venga alineada al objetivo durante todo el arco de lanzamiento, producto del control que se tiene en la trayectoria de la puntera.</p>
+<p>Con una parada apropiada, lograra una buena transferencia de energía de la caña a la línea y podrá formar el loop, ya que la línea se adelanta a la caña producto de la parada. Si alguno de estos principios no estuvieran presentes a la hora de construir un lanzamiento, sencillamente este no sería efectivo. El conocimiento que de cada uno de los principios ayudara a elegir el arco de lanzamiento y el loop apropiado, la trayectoria del mismo, le dará más precisión, mejor presentación, menor fatiga y menos problemas, asustara mucho menos peces y por ende pescara más, ya que permitirá que se destaque la mosca y no el pescador y su equipo con movimientos ampulosos e innecesarios.</p>
+</section>
+<section id="ejecicios-de-lanzamiento" class="level3">
+<h3 class="anchored" data-anchor-id="ejecicios-de-lanzamiento">Ejecicios de lanzamiento</h3>
+<p>En la pesca con mosca, hay cinco pilares fundamentales relacionados con la mecánica de lanzamiento. Cuando un principiante se familiariza con estos conceptos, puede aprender de manera más fácil y efectiva diferentes tipos de lanzamientos o ‘casts’. Dominar estos lanzamientos es esencial, ya que se adaptan a diversas situaciones que pueden presentarse durante la pesca. Para lograr esto, el curso te brinda practicas centradas en los siguientes ejercicios</p>
+<table class="table">
+<colgroup>
+<col style="width: 47%">
+<col style="width: 52%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Roll cast aéreo.</td>
+<td>Lanzamiento a distancia con double haul.</td>
+</tr>
+<tr class="even">
+<td>Levante y tendido.</td>
+<td>Correcciones aéreas.</td>
+</tr>
+<tr class="odd">
+<td>Cast elíptico o Belga</td>
+<td>Configuración del equipo.</td>
+</tr>
+<tr class="even">
+<td>Línea en vuelo con loops estrechos, medianos y amplios.</td>
+<td>Nudos básicos.</td>
+</tr>
+<tr class="odd">
+<td>Presentación de la mosca y precisión.</td>
+<td>Confección, proporciones y tipos de leaders.</td>
+</tr>
+<tr class="even">
+<td>Pick up roll.</td>
+<td>Orientación sobre los ámbitos de pesca elegidos por el alumno.</td>
+</tr>
+<tr class="odd">
+<td>Lanzamiento a distancia con línea pisada.</td>
+<td>Orientación sobre las moscas utilizadas en los diferentes ámbitos y especies.</td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
